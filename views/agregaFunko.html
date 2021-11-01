@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agrega un Funko</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+</head>
+
+<body style="background-color: white">
+    <div class="container-fluid p-3 my-3 text-black" style="background-color: rgb(53, 53, 53);">
+        <div class="row">
+            <div class="col-7">
+                <a href="/inicio">
+                    <h1 style="color:white">Funkolecciona</h1>
+                </a>
+                
+                <p style="color:white">Añade un Funko a tu coleccion</p>
+            </div>
+            <div class="col-3">
+            </div>
+            <div class="col-2">
+                <a href="http://localhost:8080/miColeccion" class="btn btn-outline-light btn-sm"
+                    role="button">Volver</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid" style="background-color: rgb(53, 53, 53);">
+        <br>
+        <h1 style="color:white">Registro</h1>
+        <br>
+
+        <div class="col-6">
+            <div class="row">
+                <form method="POST" action="/agregarFunko/guardar">
+                    <div class="form-control">
+                        <label class="form-label" for="">Nombre: </label>
+                        <input type="text" class="form-control" placeholder="Nombre del Funko" name="nombreFunko">
+                    </div>
+                    <br>
+                    <div class="form-control">
+                        <label class="form-label" for="">Modelo: </label>
+                        <input type="text" class="form-control" placeholder="Modelo del Funko" size="5" name="modeloFunko">
+                    </div>
+                    <br>
+                    <div class="form-control">
+                        <label class="form-label" for="">Categoria: </label>
+                        <input type="text" class="form-control" placeholder="Ejemplo: Star wars" name="categoriaFunko">
+                    </div>
+                    <br>
+                    <div class="form-control">
+                        <label class="form-label" for="">Precio $: </label>
+                        <input type="text" class="form-control" size="6" placeholder="Ejemplo: 15.00" name="precioFunko">
+                    </div>
+                    <br>
+                    <div class="form-control">
+                        <label class="form-label" for="">Tipo: </label>
+                        <input type="text" class="form-control" size="10" placeholder="Ejemplo: POP!" name="tipoFunko">
+                    </div>
+                    <br>
+                    <div class="form-control">
+                        <label class="form-label" for="">Licencia: </label>
+                        <input type="text" class="form-control" placeholder="Ejemplo: Marvel" name="licenciaFunko">
+                    </div>
+                    <br>
+                    <div class="form-control">
+                        <label class="form-label" for="">Descripcion: </label>
+                        <input type="text" class="form-control" placeholder="Descripcion" name="descripcion">
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col">
+                            <input type="submit" value="Agregar funko" class="btn btn-primary mx-2">
+                            <input type="reset" value="Borrar campos" class="btn btn-secondary mx-2">
+                        </div>
+                    </div>
+                </form>
+        </div>
+        </div>
+        
+        <br>
+    </div>
+
+    <br>
+
+    <div class="container-fluid text-white" style="background-color: rgb(53, 53, 53);">
+        <br>
+        <div class="row">
+            <div class="col  d-flex justify-content-center">
+                <h6>Mini-Proyecto: Aplicación de Base de Datos No-Relacional</h6>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col  d-flex justify-content-center">
+                <p>Equipo 2: Francisco Javier Gonzalez - A01748636, Humberto Carrillo - A01377246, Arturo Marquez -
+                    A01376086</p>
+            </div>
+        </div>
+        <br>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
